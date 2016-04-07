@@ -15,7 +15,6 @@ public class Game {
 	private Player player;
 	private String quitWord = "exit";
 	private String rudeQuit = "scram";
-	private String inventory = "inventory";
 	private HashMap<String, String> miscCommands;
 	
 	public Game(String world) {
@@ -48,10 +47,7 @@ public class Game {
     		command = command.toLowerCase();
     		if (command.equals(quitWord)) { quitGracefully(); };
     		if (command.equals(rudeQuit)) { quitRudely(); };
-    		if (command.equals(inventory)) {
-    			writer.write(player.getInventory().toString());
-    			}
-    		else if (player.getCurrentLocation().commandAvailable(command)) {
+    		if (player.getCurrentLocation().commandAvailable(command)) {
     			return command;
     		}
     		else if (miscCommands.containsKey(command)) {
