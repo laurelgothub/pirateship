@@ -80,13 +80,31 @@ public class Game {
     	miscCommands.put("depants", "You strip yourself of those cumbersome pants. A feeling of freedom washes over you.");
     	miscCommands.put("twiddle thumbs", "You stand around and look bored, like a loser.");
     	miscCommands.put("do nothing", "As expected, nothing happens.");
-    	miscCommands.put("strike pose", "You strike a weak pose. It's not very impressive.");
-    	miscCommands.put("strike dramatic pose", "You strike a dramatic pose. People are awed by your rad style.");
+    	miscCommands.put("pose", "You strike a weak pose. It lacks dramatic flair and is not very impressive.");
+    	miscCommands.put("pose dramatically", "You strike a dramatic pose. People are awed by your rad style.");
     	miscCommands.put("complain", "You complain. No one cares.");
     	miscCommands.put("sass", "You say something sassy and snap your fingers. No one is impressed");
     	miscCommands.put("cry", "You cry salty tears of sadness. No one cares.");
+    	miscCommands.put("live", "Life says 'no' and then kills you.");
     	miscCommands.put("die", "You try to die with pure willpower alone. It doesn't work.");
     	miscCommands.put("sing", "You sing a little tune. Your singing sucks.");
     	miscCommands.put("sing beautifully", "You break out into a gorgeous ballad. Everyone stops to listen.");
+    	miscCommands.put("faceplant", "You take a dramatic tumble, face smashing into the ground. It's an improvement, to say the least.");
+    	miscCommands.put("try", "You fail.");
+    	miscCommands.put("try hard", "You fail hard.");
+    	miscCommands.put("contemplate", "No, no, that's too difficult for you. Don't hurt yourself.");
+    	miscCommands.put("contemplate life", "You come to the conclusion that life is a dark, sad place without hope. You weep.");
+    	miscCommands.put("strut", "You strut about like a model on a walkway. People start snapping pictures.");
+    	miscCommands.put("suffer", "Such is life.");
+    	miscCommands.put("sleep", "For whatever reason, you decide that now is a good time for a nap, and fall asleep while standing. People think you're weird.");
+    	miscCommands.put("shout", "You shout out to the world, begging to be heard. No one cares.");
+    	miscCommands.put("backflip", "You attempt a backflip, only to fall and break your neck. Whoops.");
+    	miscCommands.put("rap", "You attempt to convince people you're from the hood by belting out a quick rap. No one is impressed.");
+    	miscCommands.put("fail", "You think that maybe you should try doing something else with your life.");
+    	miscCommands.put("laugh", "You break out into laughter fpr no reason. People start giving you a wide berth.");
+    	miscCommands.put("fly", "You jump around and flap your arms frantically. All you accomplish is looking stupid.");
+    	miscCommands.put("learn", "You learn that you are bad at learning.");
+    	miscCommands.put("smile", "Your smile is scaring children, please stop.");
+    	miscCommands.put("no", "Don't you say no to me.");
     }
 }
