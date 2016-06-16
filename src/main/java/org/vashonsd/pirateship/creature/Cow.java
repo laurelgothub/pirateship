@@ -1,11 +1,16 @@
 package org.vashonsd.pirateship.creature;
 
+import java.util.HashMap;
+
 import org.vashonsd.pirateship.interactions.Actor;
 
 public class Cow extends Creature {
 	
+	private HashMap<String, SpeechBehavior> holdingEffects;
+	
 	public Cow(String name, String description, String splash) {
 		super(name, "cow", description, splash);
+		holdingEffects = new HashMap<String, SpeechBehavior>();
 		setUp();
 	}
 	
@@ -24,6 +29,9 @@ public class Cow extends Creature {
 			return getSpeechBehavior().intro(this);
 		} else if (held.equals("beef")) {
 			setSpeechBehavior(new HorrifiedSpeech());
+			return getSpeechBehavior().intro(this);
+		} else if (holdingEffects.containsKey(held)) {
+			setSpeechBehavior(holdingEffects.get(held));
 			return getSpeechBehavior().intro(this);
 		}
 		

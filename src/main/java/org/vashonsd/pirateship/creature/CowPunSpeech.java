@@ -16,7 +16,17 @@ public class CowPunSpeech implements SpeechBehavior {
 		if (c.getHealth() < (c.getMaxHealth() / 2)) {
 			return c.getName() + " is hurt, but tries to laugh the pain away.";
 		}
-		return c.getName() + " is checking for laughs.";
+		String text = c.getName();
+		Random ran = new Random();
+		int x = ran.nextInt(3);
+		if (x == 0) {
+			text += " laughs at his own joke.";
+		} else if (x == 1) {
+			text += " is assessing his audience with a keen eye.";
+		} else if (x == 2) {
+			text += " pauses to consider what he's doing with his life.";
+		}
+		return text;
 	}
 
 	public String speak(Creature c) {
@@ -28,11 +38,9 @@ public class CowPunSpeech implements SpeechBehavior {
 		int x = ran.nextInt(3);
 		if (x == 0) {
 			text += "\"What makes a professional cow?...They're OUTSTANDING in their field.\"";
-		}
-		if (x == 1) {
+		} else if (x == 1) {
 			text += "\"What did the mommy cow say to the baby cow?...It's PASTURE bedtime.\"";
-		}
-		if (x == 2) {
+		} else if (x == 2) {
 			text += "\"Why did the cow climb the hill?...It wanted to RAISE THE STEAKS.\"";
 		}
 		return text;

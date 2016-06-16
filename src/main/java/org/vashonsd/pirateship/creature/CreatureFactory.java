@@ -22,6 +22,7 @@ public class CreatureFactory {
 		}
 		else if (which.equals("moofred")) {
 			Creature c = new Cow("Moofred", "He was last years olympic champion in mastication.", "You see a cow doing mad bench presses.");
+			c.setDefaultSpeech(new BuffSpeech());
 			return c;
 		}
 		else if (which.equals("ribecca")) {

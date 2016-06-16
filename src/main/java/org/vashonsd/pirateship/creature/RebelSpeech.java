@@ -29,7 +29,7 @@ public class RebelSpeech implements SpeechBehavior {
 	}
 
 	public String failText(Creature c) {
-		return c.getName() + " is baffled at your inability to make sense.";
+		return c.getName() + " rebels against your inability to make sense.";
 	}
 
 }
